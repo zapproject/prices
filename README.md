@@ -59,10 +59,14 @@ cargo leptos end-to-end
 
 ```bash
 cargo leptos end-to-end --release
+
 ```
+
 
 Cargo-leptos uses Playwright as the end-to-end test tool.  
 Tests are located in end2end/tests directory.
+
+//
 
 ## Executing a Server on a Remote Machine Without the Toolchain
 After running a `cargo leptos build --release` the minimum files needed are:
