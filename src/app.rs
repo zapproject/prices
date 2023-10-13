@@ -48,3 +48,15 @@ fn HomePage() -> impl IntoView {
         <button on:click=on_click>"Click Me: " {count}</button>
     }
 }
+
+#[component]
+fn Header() -> impl IntoView {
+    view! {
+        <div>
+            <h1>"Welcome to Leptos!"</h1>
+        </div>
+    }
+}
+
+
+

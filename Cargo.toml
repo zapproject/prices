@@ -24,6 +24,7 @@ wasm-bindgen = "=0.2.87"
 thiserror = "1.0.38"
 tracing = { version = "0.1.37", optional = true }
 http = "0.2.8"
+leptonic = "0.2.0"
 
 [features]
 hydrate = ["leptos/hydrate", "leptos_meta/hydrate", "leptos_router/hydrate"]
@@ -46,6 +47,10 @@ opt-level = 'z'
 lto = true
 codegen-units = 1
 panic = "abort"
+
+[build-dependencies]
+leptonic-theme = "0.2.0"
+leptos-tiptap-build = "0.2.3"
 
 [package.metadata.leptos]
 # The name used by wasm-bindgen/cargo-leptos for the JS/WASM bundle. Defaults to the crate name
